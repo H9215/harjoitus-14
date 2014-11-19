@@ -1,0 +1,51 @@
+/*
+jesse väänänen
+h9215
+30.10
+
+Harjoitus 14 (Palautus vko 45)
+
+Tee ohjelma, joka kysyy henkilötietosi seuraavasti:
+Anna (kaikki) etunimesi (merkkijono):
+Anna kengannumero (kokonaisluku):
+Anna sukunimi (merkkijono):
+Anna koulumatka (reaaliluku):
+Anna osoitteesi:
+Anna postinumero:
+
+Ohjelma tulostaa tiedot seuraavasti:
+sukunimi etunimet
+osoite
+postinumero
+kengannumero ja koulumatka
+
+Käytä C++:n cin- ja cout-olioita ohjelman toteuttamiseen.
+______________________________________________________*/
+
+#include <iostream> 
+using namespace std;
+void main()
+{
+	char etunimet[30];
+	int kengänumero;
+	char sukunimi[30];
+	float koulumatka;
+	char osoite[30];
+	int postinumero;
+	cout << "syötä kaikki etunimesi, kengän numerosi, sukunimesi, koulumatkasi, osoitteesi ja postinumerosi \n";
+	cin.get(etunimet, 30);
+	cin >> kengänumero;
+	cin.get();
+	cin.get(sukunimi, 30);
+	cin >> koulumatka;
+	cin.get();
+	cin.get(osoite, 30);
+	cin >> postinumero;
+	cout << sukunimi << "  " << etunimet << "\n";
+	cout << osoite << "\n";
+	cout << postinumero << "\n";
+	cout << kengänumero << "  " << koulumatka << "\n";
+
+
+
+}
